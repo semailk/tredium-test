@@ -1,0 +1,27 @@
+.fw-light {
+    font-size: 72px;
+}
+
+.header-title {
+    text-align: left;
+    width: 100%;
+    background: #E7ECEF;
+
+}
+
+.shadow-sm {
+    min-height: 400px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #4a5568;
+}

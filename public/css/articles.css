@@ -1,0 +1,24 @@
+.articles-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col {
+    width: 60%;
+    margin: 20px 0 20px 0;
+}
+
+.shadow-sm {
+    height: 400px;
+    line-height: 1.8;
+}
+
+.date {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: #4a5568;
+}
