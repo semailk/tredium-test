@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 
 class ArticleController extends Controller
 {
-    public function index()
+    /**
+     * @return View
+     */
+    public function index(): View
     {
         $articles = Article::query()->orderByDesc('created_at')->paginate(10);
         $url = 'articles';
@@ -15,7 +18,11 @@ class ArticleController extends Controller
         return view('articles', compact('articles', 'url'));
     }
 
-    public function show($slug)
+    /**
+     * @param $slug
+     * @return View
+     */
+    public function show($slug): View
     {
         $article = Article::slug($slug)->first();
         $url = 'article/show';

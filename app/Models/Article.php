@@ -30,7 +30,7 @@ class Article extends Model
      * @param $slug
      * @return mixed
      */
-    public function scopeSlug($query, $slug)
+    public function scopeSlug($query, $slug): Builder
     {
         return $query->where('slug', $slug);
     }
